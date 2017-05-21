@@ -14,7 +14,7 @@ SC_MODULE(userInputModule)
 	void handleInput()
 	{
 		const int key = getch() - KEYCODE_OFFSET;
-		if (key >= 0 && key <= 4)
+		if (key >= 0 && key < 4)
 			keyMask.write(keyMask.read() ^ (1 << key));
 	}
 
