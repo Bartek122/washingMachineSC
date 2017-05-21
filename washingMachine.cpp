@@ -3,7 +3,6 @@
 
 #include <systemc.h>
 
-
 SC_MODULE(washingMachineModule)
 {
 	sc_in<int> keyMask;
